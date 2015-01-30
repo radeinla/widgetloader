@@ -85,6 +85,19 @@ have their exports at the top or bottom of the source, and shouldn't be
 too hard to figure out. Also there's a module for listing added globals
 in `app/js/list_globals.js`.
 
+# Using Docker
+Build the docker image
+$ sudo docker build -t widgetloader .
+
+Run the docker container
+$ sudo docker run widgetloader
+
+Get the IP for the instance:
+$ sudo docker ps
+Check for container hash
+$ sudo docker inspect <hash>
+
+
 # TODO
 - Try to find a generic and automated way of wrapping libraries
 - Make it easier to use this repository as a module, so one can pull
